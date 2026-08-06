@@ -188,7 +188,7 @@
     <p class="subtitulo">Receba as orações da novena e Nossa Senhora vai te entregar o milagre que tanto pediu</p>
 
     <!-- Salve a imagem do mockup do livro como images/livro-novena.jpg dentro desta pasta -->
-    <img src="images/s1.png" alt="Livro da Novena de Nossa Senhora Desatadora de Nós" class="mockup-livro-img">
+    <img src="images/image (25).jpg" alt="Livro da Novena de Nossa Senhora Desatadora de Nós" class="mockup-livro-img">
 
     <div class="caixa-preco">
       <p>Faça uma única contribuição de</p>
@@ -246,14 +246,7 @@
       window.location.href = CHECKOUT_URL;
     }
 
-    // Redireciona se o visitante tentar sair pelo topo da página (fechar aba, trocar de aba, etc. em desktop)
-    document.addEventListener('mouseout', function (e) {
-      if (!e.relatedTarget && e.clientY <= 0) {
-        irParaCheckout();
-      }
-    });
-
-    // Redireciona se o visitante apertar o botão de voltar do navegador (principal caso no celular)
+    // Redireciona se o visitante apertar o botão de voltar do navegador
     history.pushState(null, '', location.href);
     window.addEventListener('popstate', function () {
       irParaCheckout();
